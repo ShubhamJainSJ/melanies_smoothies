@@ -26,7 +26,6 @@ st.write("Choose the fruits you want in your custom Smoothie!")
 
 # st.write("Your favorite fruit is:", option)
 
-session = get_active_session()
 my_dataframe = session.table("smoothies.public.fruit_options").select(col('FRUIT_NAME'));
 # st.dataframe(data=my_dataframe, use_container_width=True)
 
